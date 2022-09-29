@@ -30,7 +30,7 @@ extension UISegmentedControl {
         
         // Setting colors
         // When selected
-        self.setTitleTextAttributes( [NSAttributedString.Key.foregroundColor : UIColor(named: "redMain")!], for: .selected)
+        self.setTitleTextAttributes( [NSAttributedString.Key.foregroundColor : UIColor.red], for: .selected)
         // When on foreground
         self.setTitleTextAttributes( [NSAttributedString.Key.foregroundColor : UIColor.black], for: .normal)
     }
@@ -38,7 +38,6 @@ extension UISegmentedControl {
     // Creating underline
     
     func addUnderlineForSelectedSegment() {
-        
         // Removing background
         removeBorder()
         

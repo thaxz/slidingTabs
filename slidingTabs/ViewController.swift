@@ -8,14 +8,53 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    let segmentedControl: UISegmentedControl = {
+        let segmented = UISegmentedControl(items: ["Item 0", "Item 1"])
+        segmented.selectedSegmentIndex = 0
+        segmented.frame = CGRect(x: 0, y: 0, width: 300, height: 40)
+        segmented.addUnderlineForSelectedSegment()
+        return segmented
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .white
+        setUp()
+        
     }
-
-
+    
+    func btConfiguration(){
+        
+        segmentedControl.addTarget(self, action: #selector(touchSegmented), for: .valueChanged)
+        
+    }
+    
+    @objc func touchSegmented(_ sender: UISegmentedControl) {
+        segmentedControl.changeUnderlinePosition()
+    }
+    
+    func constraints(){
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            segmentedControl.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            segmentedControl.widthAnchor.constraint(equalToConstant: 300)
+        ]
+        )
+    }
+    
+    func setUp(){
+        
+        view.backgroundColor = .white
+        view.addSubview(segmentedControl)
+        constraints()
+        btConfiguration()
+        
+        
+    }
+    
+    
 }
 
 // MARK: - Preview
