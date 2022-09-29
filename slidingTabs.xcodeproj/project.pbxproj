@@ -14,6 +14,8 @@
 		E9DCF5A728E6534400D6C609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DCF5A528E6534400D6C609 /* LaunchScreen.storyboard */; };
 		E9DCF5B028E653CD00D6C609 /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DCF5AE28E653CD00D6C609 /* UIView+Preview.swift */; };
 		E9DCF5B128E653CD00D6C609 /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DCF5AF28E653CD00D6C609 /* UIViewController+Preview.swift */; };
+		E9DCF5B328E6556D00D6C609 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DCF5B228E6556D00D6C609 /* UIImage+Extension.swift */; };
+		E9DCF5B528E6559D00D6C609 /* SegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DCF5B428E6559D00D6C609 /* SegmentedControl+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E9DCF5A828E6534400D6C609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9DCF5AE28E653CD00D6C609 /* UIView+Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
 		E9DCF5AF28E653CD00D6C609 /* UIViewController+Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
+		E9DCF5B228E6556D00D6C609 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		E9DCF5B428E6559D00D6C609 /* SegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +65,23 @@
 				E9DCF59A28E6534300D6C609 /* AppDelegate.swift */,
 				E9DCF59C28E6534300D6C609 /* SceneDelegate.swift */,
 				E9DCF59E28E6534300D6C609 /* ViewController.swift */,
+				E9DCF5B628E655B000D6C609 /* Extensions */,
 				E9DCF5A328E6534400D6C609 /* Assets.xcassets */,
 				E9DCF5A528E6534400D6C609 /* LaunchScreen.storyboard */,
 				E9DCF5A828E6534400D6C609 /* Info.plist */,
+			);
+			path = slidingTabs;
+			sourceTree = "<group>";
+		};
+		E9DCF5B628E655B000D6C609 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9DCF5B228E6556D00D6C609 /* UIImage+Extension.swift */,
+				E9DCF5B428E6559D00D6C609 /* SegmentedControl+Extension.swift */,
 				E9DCF5AE28E653CD00D6C609 /* UIView+Preview.swift */,
 				E9DCF5AF28E653CD00D6C609 /* UIViewController+Preview.swift */,
 			);
-			path = slidingTabs;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +157,10 @@
 				E9DCF59F28E6534300D6C609 /* ViewController.swift in Sources */,
 				E9DCF5B028E653CD00D6C609 /* UIView+Preview.swift in Sources */,
 				E9DCF5B128E653CD00D6C609 /* UIViewController+Preview.swift in Sources */,
+				E9DCF5B528E6559D00D6C609 /* SegmentedControl+Extension.swift in Sources */,
 				E9DCF59B28E6534300D6C609 /* AppDelegate.swift in Sources */,
 				E9DCF59D28E6534300D6C609 /* SceneDelegate.swift in Sources */,
+				E9DCF5B328E6556D00D6C609 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
